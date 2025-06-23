@@ -1,5 +1,6 @@
 const mario = document.querySelector(".mario")
 const pipe = document.querySelector(".pipe")
+const nuvem = document.querySelector(".nuvem")
 const startButton = document. queryselector(".start")
 const gameOverSc = document.querySelector("game-over")
 
@@ -38,3 +39,11 @@ const marioPosition = +window.getComputedStyle(mario).bottom.replace("px", "");
     }
 },10);
 document.addEventListener("keydown", jump);
+
+        
+
+         clearInterval(loop);
+         gameoverScren.style.display= "flex";
+       }   
+
+       
